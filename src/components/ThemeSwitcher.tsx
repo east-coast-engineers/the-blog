@@ -1,12 +1,17 @@
 import { useTheme } from 'next-themes'
-// @ts-ignore
-import { UilBolt } from '@iconscout/react-unicons'
+import { UilSun } from '@iconscout/react-unicons'
+import { UilMoon } from '@iconscout/react-unicons'
 
 export default function ThemeSwitcher() {
-  const {theme, setTheme} = useTheme()
+  const { theme, setTheme } = useTheme()
+
   return (
-    <button aria-label="Toggle Dark Mode" type="button"  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-      <UilBolt />
+    <button
+      aria-label={`Toggle ${theme === 'dark' ? 'light' : 'dark'} theme mode`}
+      type="button"
+      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+    >
+      {theme === 'dark' ? <UilSun /> : <UilMoon />}
     </button>
   )
 }
