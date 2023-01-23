@@ -3,7 +3,6 @@ import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
 import { Roboto } from '@next/font/google'
 import HeaderMobile from '@/components/HeaderMobile'
-import Footer from '@/components/Footer'
 
 const roboto = Roboto({
   weight: '400',
