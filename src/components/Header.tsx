@@ -9,7 +9,7 @@ interface Props {
 const NavMenu = styled.div<Props>`
   position: absolute;
   width: 100%;
-  height: 98vh;
+  height: 90vh;
   z-index: 50;
   background-color: #f8fafc;
   border-radius: 1rem 1rem 0 0;
@@ -51,7 +51,7 @@ export default function Header() {
             <UilTimesCircle />
           </button>
         </div>
-        Menu
+        <div className="p-4">Menu</div>
       </NavMenu>
     </>
   )
