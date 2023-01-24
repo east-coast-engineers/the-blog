@@ -1,15 +1,8 @@
-import Head from 'next/head'
+import fs from 'fs'
+import matter from 'gray-matter'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
-  return (
-    <>
-      <Head>
-        <title>Chips & Salsa - Home</title>
-        <meta name="description" content="Chips & Salsa, the spiciest tech blog on the internet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      Home
-    </>
-  )
+  return <h1>Home Page</h1>
 }
